@@ -1,0 +1,5 @@
+<li id= <%=todo.id%> >
+ Description: <%= todo.description %>
+ Priority: <%= todo.priority %>
+<%= link_to "delete", todo_path(todo), method: :delete, remote: true %>
+</li>
